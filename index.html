@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>King Shaban | Premium Heavy Bikes</title>
+
+    <meta name="description"
+        content="King Shaban - Premium heavy bikes and superbikes showroom.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        <span>K</span>
+        KING SHABAN
+    </div>
+
+    <nav id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#bikes">Bikes</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="nav-btn" href="#contact">
+        Contact Us
+    </a>
+
+    <button class="menu-btn" onclick="toggleMenu()">
+        ☰
+    </button>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="small-title">
+            PREMIUM MOTORCYCLE SHOWROOM
+        </p>
+
+        <h1>
+            RIDE THE
+            <span>EXTRAORDINARY.</span>
+        </h1>
+
+        <p class="hero-text">
+            Discover premium superbikes and heavy motorcycles
+            from world-famous performance brands.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#bikes" class="primary-btn">
+                Explore Bikes
+            </a>
+
+            <a href="#contact" class="secondary-btn">
+                Contact Showroom
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-overlay"></div>
+
+</section>
+
+
+<!-- ================= BRANDS ================= -->
+
+<section class="brands">
+
+    <p>FEATURED BRANDS</p>
+
+    <div class="brand-list">
+
+        <span>KAWASAKI</span>
+        <span>BMW MOTORRAD</span>
+        <span>YAMAHA</span>
+        <span>SUZUKI</span>
+        <span>DUCATI</span>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BIKES ================= -->
+
+<section class="bikes-section" id="bikes">
+
+    <div class="section-heading">
+
+        <div>
+            <p class="section-tag">OUR COLLECTION</p>
+
+            <h2>
+                Premium <span>Bikes</span>
+            </h2>
+        </div>
+
+        <p class="section-description">
+            Explore our selection of high-performance motorcycles.
+        </p>
+
+    </div>
+
+
+    <!-- SEARCH -->
+
+    <div class="controls">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search bike..."
+            onkeyup="searchBikes()"
+        >
+
+        <select id="brandFilter" onchange="filterBikes()">
+
+            <option value="all">
+                All Brands
+            </option>
+
+            <option value="Kawasaki">
+                Kawasaki
+            </option>
+
+            <option value="BMW">
+                BMW
+            </option>
+
+            <option value="Yamaha">
+                Yamaha
+            </option>
+
+            <option value="Suzuki">
+                Suzuki
+            </option>
+
+            <option value="Ducati">
+                Ducati
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <div class="bike-grid" id="bikeGrid">
+
+
+        <!-- H2R -->
+
+        <article class="bike-card"
+            data-brand="Kawasaki"
+            data-name="Kawasaki Ninja H2R">
+
+            <div class="bike-image">
+
+                <img src="images/h2r.jpg"
+                    alt="Kawasaki Ninja H2R">
+
+                <span class="badge">
+                    SUPERBIKE
+                </span>
+
+            </div>
+
+            <div class="bike-info">
+
+                <p class="brand">
+                    KAWASAKI
+                </p>
+
+                <h3>
+                    Ninja H2R
+                </h3>
+
+                <p class="spec">
+                    998cc • Supercharged • Track-focused
+                </p>
+
+                <div class="bike-bottom">
+
+                    <strong>
+                        Price on Request
+                    </strong>
+
+                    <button onclick="showDetails('Kawasaki Ninja H2R')">
+                        Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- ZX10R -->
+
+        <article class="bike-card"
+            data-brand="Kawasaki"
+            data-name="Kawasaki Ninja ZX-10R">
+
+            <div class="bike-image">
+
+                <img src="images/zx10r.jpg"
+                    alt="Kawasaki Ninja ZX-10R">
+
+                <span class="badge">
+                    SPORT
+                </span>
+
+            </div>
+
+            <div class="bike-info">
+
+                <p class="brand">
+                    KAWASAKI
+                </p>
+
+                <h3>
+                    Ninja ZX-10R
+                </h3>
+
+                <p class="spec">
+                    998cc • Inline-4 • 6 Speed
+                </p>
+
+                <div class="bike-bottom">
+
+                    <strong>
+                        PKR 4,500,000+
+                    </strong>
+
+                    <button onclick="showDetails('Kawasaki Ninja ZX-10R')">
+                        Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- Z900 -->
+
+        <article class="bike-card"
+            data-brand="Kawasaki"
+            data-name="Kawasaki Z900">
+
+            <div class="bike-image">
+
+                <img src="images/z900.jpg"
+                    alt="Kawasaki Z900">
+
+                <span class="badge">
+                    NAKED
+                </span>
+
+            </div>
+
+            <div class="bike-info">
+
+                <p class="brand">
+                    KAWASAKI
+                </p>
+
+                <h3>
+                    Z900
+                </h3>
+
+                <p class="spec">
+                    948cc • Inline-4 • Naked Sport
+                </p>
+
+                <div class="bike-bottom">
+
+                    <strong>
+                        PKR 2,600,000+
+                    </strong>
+
+                    <button onclick="showDetails('Kawasaki Z900')">
+                        Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- NINJA 650 -->
+
+        <article class="bike-card"
+            data-brand="Kawasaki"
+            data-name="Kawasaki Ninja 650">
+
+            <div class="bike-image">
+
+                <img src="images/ninja650.jpg"
+                    alt="Kawasaki Ninja 650">
+
+                <span class="badge">
+                    SPORT
+                </span>
+
+            </div>
+
+            <div class="bike-info">
+
+                <p class="brand">
+                    KAWASAKI
+                </p>
+
+                <h3>
+                    Ninja 650
+                </h3>
+
+                <p class="spec">
+                    649cc • Twin Cylinder • 6 Speed
+                </p>
+
+                <div class="bike-bottom">
+
+                    <strong>
+                        PKR 2,100,000+
+                    </strong>
+
+                    <button onclick="showDetails('Kawasaki Ninja 650')">
+                        Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- BMW -->
+
+        <article class="bike-card"
+            data-brand="BMW"
+            data-name="BMW S1000RR">
+
+            <div class="bike-image">
+
+                <img src="images/s1000rr.jpg"
+                    alt="BMW S1000RR">
+
+                <span class="badge">
+                    PREMIUM
+                </span>
+
+            </div>
+
+            <div class="bike-info">
+
+                <p class="brand">
+                    BMW MOTORRAD
+                </p>
+
+                <h3>
+                    S1000RR
+                </h3>
+
+                <p class="spec">
+                    999cc • Inline-4 • Superbike
+                </p>
+
+                <div class="bike-bottom">
+
+                    <strong>
+                        PKR 12,600,000
+                    </strong>
+
+                    <button onclick="showDetails('BMW S1000RR')">
+                        Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- DUCATI -->
+
+        <article class="bike-card"
+            data-brand="Ducati"
+            data-name="Ducati Panigale V4">
+
+            <div class="bike-image">
+
+                <img src="images/panigale.jpg"
+                    alt="Ducati Panigale V4">
+
+                <span class="badge">
+                    ITALIAN
+                </span>
+
+            </div>
+
+            <div class="bike-info">
+
+                <p class="brand">
+                    DUCATI
+                </p>
+
+                <h3>
+                    Panigale V4
+                </h3>
+
+                <p class="spec">
+                    1103cc • V4 • Superbike
+                </p>
+
+                <div class="bike-bottom">
+
+                    <strong>
+                        PKR 11,000,000+
+                    </strong>
+
+                    <button onclick="showDetails('Ducati Panigale V4')">
+                        Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- YAMAHA -->
+
+        <article class="bike-card"
+            data-brand="Yamaha"
+            data-name="Yamaha YZF R1">
+
+            <div class="bike-image">
+
+                <img src="images/r1.jpg"
+                    alt="Yamaha R1">
+
+                <span class="badge">
+                    RACING
+                </span>
+
+            </div>
+
+            <div class="bike-info">
+
+                <p class="brand">
+                    YAMAHA
+                </p>
+
+                <h3>
+                    YZF-R1
+                </h3>
+
+                <p class="spec">
+                    998cc • Inline-4 • Racing DNA
+                </p>
+
+                <div class="bike-bottom">
+
+                    <strong>
+                        PKR 4,500,000+
+                    </strong>
+
+                    <button onclick="showDetails('Yamaha YZF-R1')">
+                        Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- HAYABUSA -->
+
+        <article class="bike-card"
+            data-brand="Suzuki"
+            data-name="Suzuki Hayabusa">
+
+            <div class="bike-image">
+
+                <img src="images/hayabusa.jpg"
+                    alt="Suzuki Hayabusa">
+
+                <span class="badge">
+                    LEGEND
+                </span>
+
+            </div>
+
+            <div class="bike-info">
+
+                <p class="brand">
+                    SUZUKI
+                </p>
+
+                <h3>
+                    Hayabusa
+                </h3>
+
+                <p class="spec">
+                    1340cc • Inline-4 • Grand Sport
+                </p>
+
+                <div class="bike-bottom">
+
+                    <strong>
+                        PKR 5,000,000+
+                    </strong>
+
+                    <button onclick="showDetails('Suzuki Hayabusa')">
+                        Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+    <div class="about-content">
+
+        <p class="section-tag">
+            ABOUT KING SHABAN
+        </p>
+
+        <h2>
+            Built For Those Who
+            <span>Love Performance.</span>
+        </h2>
+
+        <p>
+            King Shaban is a premium motorcycle showroom concept
+            focused on superbikes, heavy bikes and performance
+            motorcycles.
+        </p>
+
+        <p>
+            Our collection features iconic machines from Kawasaki,
+            BMW Motorrad, Yamaha, Suzuki and Ducati.
+        </p>
+
+    </div>
+
+
+    <div class="stats">
+
+        <div>
+            <strong>08+</strong>
+            <span>Premium Bikes</span>
+        </div>
+
+        <div>
+            <strong>05</strong>
+            <span>Major Brands</span>
+        </div>
+
+        <div>
+            <strong>100%</strong>
+            <span>Passion</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+    <div class="contact-heading">
+
+        <p class="section-tag">
+            GET IN TOUCH
+        </p>
+
+        <h2>
+            Let's Find Your
+            <span>Dream Bike.</span>
+        </h2>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+        <div class="contact-card">
+
+            <div class="contact-icon">
+                ✉
+            </div>
+
+            <h3>
+                Email
+            </h3>
+
+            <a href="mailto:shabanmahi7865@gmail.com">
+                shabanmahi7865@gmail.com
+            </a>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="contact-icon">
+                ☎
+            </div>
+
+            <h3>
+                Phone
+            </h3>
+
+            <a href="tel:03358618208">
+                0335 8618208
+            </a>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="contact-icon">
+                WA
+            </div>
+
+            <h3>
+                WhatsApp
+            </h3>
+
+            <a
+                href="https://wa.me/923358618208"
+                target="_blank">
+
+                Chat on WhatsApp
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        KING SHABAN
+    </div>
+
+    <p>
+        Premium Heavy Bikes & Superbikes
+    </p>
+
+    <div class="footer-line"></div>
+
+    <p class="copyright">
+        © 2026 King Shaban. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- DETAILS MODAL -->
+
+<div id="detailsModal" class="modal">
+
+    <div class="modal-box">
+
+        <button class="close-btn"
+            onclick="closeModal()">
+            ×
+        </button>
+
+        <p class="section-tag">
+            KING SHABAN
+        </p>
+
+        <h2 id="modalTitle">
+            Bike Details
+        </h2>
+
+        <p id="modalText">
+            Premium motorcycle details.
+        </p>
+
+        <a href="#contact"
+            onclick="closeModal()"
+            class="primary-btn">
+
+            Contact Showroom
+
+        </a>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+<!-- ================= MY PROFILE ================= -->
+
+<section class="profile-section" id="profile">
+
+    <div class="profile-image">
+        <img src="images/shaban.jpg" alt="M Shaban">
+    </div>
+
+    <div class="profile-content">
+
+        <span class="profile-tag">ABOUT ME</span>
+
+        <h2>I'm <span>M Shaban</span></h2>
+
+        <p class="profile-title">
+            CIT Student & Founder of King Shaban
+        </p>
+
+        <p>
+            I am from <strong>Mamukanjan</strong> and currently a student
+            of the <strong>CIT Department</strong> at
+            <strong>Government College of Technology</strong>.
+        </p>
+
+        <p>
+            I am interested in computers, technology, web development
+            and modern digital projects. I created <strong>King Shaban</strong>
+            as a professional heavy bikes and superbikes showcase website.
+        </p>
+
+        <div class="profile-details">
+
+            <div>
+                <strong>📍 From</strong>
+                <span>Mamukanjan</span>
+            </div>
+
+            <div>
+                <strong>🎓 Department</strong>
+                <span>CIT</span>
+            </div>
+
+            <div>
+                <strong>🏫 College</strong>
+                <span>Government College of Technology</span>
+            </div>
+
+            <div>
+                <strong>💻 Interest</strong>
+                <span>Web Development & Technology</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
